@@ -1,0 +1,32 @@
+body{
+    margin: 0;     
+}
+
+h1{
+    margin: 0;
+}
+header{
+    background-color: black;
+    color: aliceblue;
+    display: flex; /* deixa tudo numa linha */
+    justify-content: space-between; /* só funciona com displat flex, coloca espaçamento*/
+    font-family: Impact, Haettenschweiler, 'Arial Narrow', sans-serif;
+    padding: 10px;
+}
+
+#box-ordenar button {
+    background-color: green;
+}
+#box-categorias button{
+    background-color: red;
+}
+
+#box-categorias button, 
+#box-ordenar button{
+    color: white;
+    border-radius: 15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-color: aliceblue;
+    font-size: 20px;
+    padding: 10px 20px; /* a distância do texto da caixa */
+}

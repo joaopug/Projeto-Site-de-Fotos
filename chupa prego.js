@@ -71,4 +71,15 @@ const parametro = "Olá,";
 const segundoParametro = " Mundo!";
 
 console.log(jorgepica(parametro,segundoParametro));
+
+// -----------------------/-------------------------
+
+
+// Array em javascript são estruturas de dados que permitem
+// armazenar uma coleção ordenada de elementos (strings, números, objetos, arrays)
+// Arrays precisam de uma variável definida (const ou let) e também de colchetes []
+
+const primeiroArray = [ "Camiseta", "Calcinha", "Cueca", "Calça" ];
+console.log(primeiroArray[0]); // 0 é o elemento que irá aparecer o array, ou seja, camiseta 
+
 });

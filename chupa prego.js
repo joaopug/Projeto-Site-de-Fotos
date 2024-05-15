@@ -82,4 +82,19 @@ console.log(jorgepica(parametro,segundoParametro));
 const primeiroArray = [ "Camiseta", "Calcinha", "Cueca", "Calça" ];
 console.log(primeiroArray[0]); // 0 é o elemento que irá aparecer o array, ou seja, camiseta 
 
+// -----------------------/--------------------------
+
+
+
+// Os objetos são coleções NÃO ORDENADAS de pares chave-valor
+// onde cada valor é associado a uma chave única
+
+
+let ser_humano = {
+    nome: "KIM",
+    idade: "18",
+    profissao: "Faz programa"
+}
+console.log(ser_humano["nome"]); // "nome" é a chave que será percorrida no objeto (vai aparecer no log)
+
 });

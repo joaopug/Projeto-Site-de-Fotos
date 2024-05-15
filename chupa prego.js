@@ -55,4 +55,20 @@ document.addEventListener('DOMContentLoaded', function() {
     } else{
         console.log("não é o Lucas")
     }
-})
+
+
+// --------------------- / ------------------------
+
+// Funções são blocos de código que podem ser chamados e
+// reutilizados
+// Dentro dos parenteses da função vai os parâmetros/propriedades
+
+function jorgepica(parametro, segundoParametro) {
+    return parametro + segundoParametro;
+}
+
+const parametro = "Olá,";
+const segundoParametro = " Mundo!";
+
+console.log(jorgepica(parametro,segundoParametro));
+});

@@ -97,4 +97,13 @@ let ser_humano = {
 }
 console.log(ser_humano["nome"]); // "nome" é a chave que será percorrida no objeto (vai aparecer no log)
 
+
+// ------------ / -------------
+
+const numeros = ["A", "B", "C", "D"]
+
+numeros.forEach(elemento => {
+    console.log(elemento)
+})
+
 });

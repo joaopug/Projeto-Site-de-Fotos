@@ -3,8 +3,8 @@ document.addEventListener("DOMContentLoaded", function (){
     const baseImagens = {
         todes: ['city.jpg', 'animal.jpg', 'natureza.jpg'],
         nature: ['natureza.jpg'],
-        cidade: ['city.jpg'],
-        animal: ['animal.jpg'],
+        city: ['city.jpg'],
+        animals: ['animal.jpg'],
     }
 
     function carregaImages(categoria){
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function (){
     
     }
 
-    carregaImages('categoria');
+    carregaImages('todes');
     
 
     // Evento de clique

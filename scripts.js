@@ -6,8 +6,7 @@ document.addEventListener("DOMContentLoaded", function (){
         city: ['city.jpg'],
         animals: ['animal.jpg'],
     }
-
-    function carregaImages(categoria){
+    function carregaImagens(categoria){
         //Selecionar elementos HTML com base em um seletor
         const galeria = document.querySelector("#galeria-imagens")
         galeria.innerHTML = ''; //Limpar bloco, apaga tudo dentro
@@ -16,15 +15,16 @@ document.addEventListener("DOMContentLoaded", function (){
 
         imagens.forEach(img => {
             console.log(img);
-            galeria.innerHTML += "<div> <img src='imagens/"+ img +"'/> </div>";
+            galeria.innerHTML += "<div class='imagem-item'> <img src='imagens/"+ img +"'/> </div>";
         })
-
-    
     }
-
-    carregaImages('todes');
-    
-
+    function ordenaImagens(ordem) {
+        const imagens = Array.from(document.querySelectorAll("#galeria-imagens .imagem-item"));
+        imagens.sort((a,b) => {
+            console.log(a)
+        })
+    }
+    carregaImagens('todes');
     // Evento de clique
     document.body.addEventListener('click', function (event){
         if(event.target.classList.contains('botao-categoria')) {// Acessa a lista de classe de onde clicou e procura pela classe botao-categoria
@@ -33,13 +33,14 @@ document.addEventListener("DOMContentLoaded", function (){
 
             //alert(categoria)
 
-            carregaImages(categoria);
+            carregaImagens(categoria);
 
 
-        };        
-    
+        };
+        if(event.target.classList.contains('botao-ordenar')) {
+
+            const ordem = event.target.dataset.ordem;
+            ordenaImagens(ordem);
+         }        
     });
-    
-
-
 })

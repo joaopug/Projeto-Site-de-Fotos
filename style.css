@@ -30,3 +30,13 @@ header{
     font-size: 20px;
     padding: 10px 20px; /* a distância do texto da caixa */
 }
+
+#galeria-imagens{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#galeria-images img{
+    max-width: 100%;
+}

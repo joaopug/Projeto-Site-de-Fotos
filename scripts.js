@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", function (){
 
     const baseImagens = {
-        todes: ['city.jpg', 'animal.jpg', 'natureza.jpg'],
-        nature: ['natureza.jpg'],
-        city: ['city.jpg'],
-        animals: ['animal.jpg'],
+        todes: ['noite_mar.jpg', 'noite_cidade.jpeg', 'onça-pintada.jpg', 'beija-flor.jpg', 'montanhas.jpg', 'campo.jpg'],
+        nature: ['montanhas.jpg', 'campo.jpg'],
+        city: ['noite_mar.jpg', 'noite_cidade.jpeg'],
+        animals: ['onça-pintada.jpg', 'beija-flor.jpg'],
     }
     function carregaImagens(categoria){
         //Selecionar elementos HTML com base em um seletor
